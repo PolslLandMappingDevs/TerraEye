@@ -1,0 +1,23 @@
+.floatingContainer {
+    position: absolute;
+    bottom: 40px;
+    left: calc(31% + 500px);
+    transform: translateX(-50%);
+    width: 600px;
+    z-index: 20;
+}
+
+.glassPanel {
+    background-color: rgba(10, 10, 12, 0.8);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+    padding: 16px 24px;
+}
+
+.sliderWidth {
+    width: 100%;
+}
+

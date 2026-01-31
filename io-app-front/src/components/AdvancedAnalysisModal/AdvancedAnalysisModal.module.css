@@ -1,0 +1,319 @@
+.modalContent {
+    background-color: rgba(15, 15, 18, 0.95) !important;
+    backdrop-filter: blur(40px) saturate(180%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    color: white !important;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.8) !important;
+}
+
+.modalHeader {
+    background: linear-gradient(to bottom, rgba(15, 15, 18, 0.95), rgba(15, 15, 18, 0.8)) !important;
+    backdrop-filter: blur(40px) saturate(180%) !important;
+    padding: 24px 32px !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.modalBody { background: transparent !important; padding: 0 32px 32px 32px !important; }
+.modalTitle { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.5px; color: white; }
+
+.dualLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+.modelColumn {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 24px;
+    height: 100%;
+}
+
+.columnHeader {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.imagesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.imageCard {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.imageCard:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.cardTitle {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.cardFrame {
+    width: 100%;
+    background-color: #000;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.cardImg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.cardSubtitle {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.masksSection {
+    grid-column: 1 / -1;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 10px;
+}
+
+.masksHeader {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.masksGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.maskCard {
+    border: 1px solid;
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.maskTitleBar {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+}
+
+.maskImg {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #000;
+}
+
+.maskInfo {
+    padding: 10px;
+}
+
+.maskDesc {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 6px;
+}
+
+.maskFormula {
+    font-family: monospace;
+    font-size: 0.7rem;
+    color: #4dabf7;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.metricsSection {
+    grid-column: 1 / -1;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.metricsSubsection {
+    margin-bottom: 32px;
+}
+
+.metricsSubsection:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 32px;
+}
+
+.metricsHeader {
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mainMetricsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.metricCard {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.metricCard:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+}
+
+.metricLabel {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.metricValueContainer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.metricValueText {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.metricUnit {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.classDetailsSection {
+    margin-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 20px;
+}
+
+.classDetailsHeader {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 16px;
+}
+
+.classDetailsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.classMetricCard {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.classMetricName {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.classMetricValues {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.classMetricRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.metricValue {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.startAnalysisButton {
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.4s ease;
+    will-change: transform;
+    transform: scale(1);
+}
+
+.startAnalysisButton:hover {
+    transform: scale(1.02);
+}
+
+.startAnalysisButton:active {
+    transform: scale(0.96);
+    transition-duration: 0.1s;
+}
+
+.errorBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    color: #ff8787;
+    backdrop-filter: blur(10px);
+    margin-bottom: 8px;
+}

@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.inputLabel {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #868e96 !important;
+    margin-bottom: 5px;
+}
+
+.inputField {
+    background-color: #25262b !important;
+    border-color: #373a40 !important;
+    color: #fff !important;
+}
+
+.inputField:focus {
+    border-color: #228be6 !important;
+}
+
+.sliderTrack {
+    background-color: #373a40;
+}
+
+.sliderThumb {
+    border-color: #228be6;
+    background-color: #1a1b1e;
+}

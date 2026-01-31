@@ -1,0 +1,35 @@
+.container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+    width: 240px;
+}
+
+.glassPanel {
+    background-color: rgba(10, 10, 12, 0.8);
+
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+
+    padding: 16px 20px;
+}
+
+.colorBadge {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex-shrink: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.itemLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
